@@ -48,7 +48,7 @@ namespace Infrastructure.Services
             query = sort switch
             {
                 "priceAsc" => query.OrderBy(x => x.Price),
-                "priceDesc" => query.OrderByDescending(x => x.Price),
+                "pcriceDesc" => query.OrderByDescending(x => x.Price),
                 _ => query.OrderBy(x => x.Name),
             };
 
