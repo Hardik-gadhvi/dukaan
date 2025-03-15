@@ -1,17 +1,4 @@
-@use '@angular/material' as mat;
-
+/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-$customTheme: mat.define-theme();
-
-@include mat.core();
-
-.custom-theme{
-    @include mat.all-component-themes($customTheme);   
-}
-
-.container{
-    @apply mx-auto max-w-screen-2xl
-}
